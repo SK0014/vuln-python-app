@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>VulnApp</title></head>
+<body>
+    <h2>YAML Parser (Vulnerable)</h2>
+    <form method="POST">
+        <textarea name="yaml_input" rows="10" cols="40"></textarea><br/>
+        <input type="submit" value="Parse YAML" />
+    </form>
+    <p>{{ result }}</p>
+
+    <hr/>
+    <h2>URL Fetcher (Vulnerable to SSRF)</h2>
+    <form method="GET" action="/request">
+        <input name="url" type="text" size="40"/>
+        <input type="submit" value="Fetch"/>
+    </form>
+</body>
+</html>
