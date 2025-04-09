@@ -1,9 +1,12 @@
-Flask==1.0         
-Jinja2==2.10       
-requests==2.19.1    
+Flask==2.2.5         
+Jinja2==3.1.6       
+requests==2.32.2    
 PyYAML==4.1        
-Django==1.11.8
-pillow==5.2.0 
+Django==1.11.19
+pillow==6.2.0 
 chardet==3.0.4  
-Werkzeug==0.14.1
+Werkzeug==3.0.6
 MarkupSafe==1.0   
+idna>=3.7 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=1.26.19 # not directly required, pinned by Snyk to avoid a vulnerability
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
